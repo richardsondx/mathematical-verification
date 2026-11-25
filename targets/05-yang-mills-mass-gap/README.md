@@ -41,6 +41,31 @@ Does quantum Yang-Mills theory in four dimensions exist, with a positive mass ga
 - Toy axiom result: five theorems depend only on `propext`, one also depends on `Quot.sound`.
 - Status stays honest: axioms only, toy model added, no mass gap proved.
 
+## Mass gap assessment, Nov 25, 2026
+
+- Map added: `MASS-GAP-MAP-v02.md`, Jaffe-Witten statement, OpenAI Oct 28, 2026 construction, Feldman and Osterwalder 1976.
+- Lean added: `MassGap.lean`, 75 lines, Lean 4.23.0, core Lean only, no Mathlib.
+- Lean added: `MassGap_axiom_check.lean`, the same file plus axiom prints, for verification only.
+- Checked Nov 25, 2026 in this folder: `lean MassGap.lean` exit 0, no errors, no `sorry`.
+- Checked Nov 25, 2026 in this folder: `lean MassGap_axiom_check.lean` exit 0, no `sorryAx`.
+- Toy gap result: a two-state model with energies 0 and m has a gap of m.
+- Toy gap result: only the vacuum state has energy zero in the toy model.
+- Toy gap result: no toy state sits between 0 and m.
+- Axiom result: four toy theorems depend on no axioms, one depends only on `propext`.
+- Report added: `MASS-GAP-REPORT.md`, six open steps, hardest first, each with an unblock step.
+- Status stays honest: toy gap proved, real mass gap stays open.
+
+## Fix, Nov 25, 2026
+
+- Map v02 added: `ENTIRE-MAP-v02.md`, fixes D1 and D2.
+- D1 fix: Section 1 now reads early 1950s, first published 1964.
+- D2 fix: Section 6 now credits Feldman and Osterwalder, Ann. Physics 97 (1976), 80-135.
+- Final report added: `final-report-v05.md`, fix run report, rewrite of v04.
+- Claim sheet added: `CLAIM.md`, states only what Lean proved.
+- Claim sheet names the mass gap as open.
+- Proof commit: https://github.com/richardsondx/mathematical-verification/commit/ae053e7b3d09e378031ccc237d3ee854c5c26662
+- Status stays honest: axioms only, toy model added, no mass gap proved.
+
 ## Why this scope
 
 - Full construction needs distributions, renormalization, uniform estimates, and limits.
