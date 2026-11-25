@@ -1,0 +1,66 @@
+QFT Toy check log
+Run: stage2-qft-entire-2026-11-25-01, Unit U2, predicate pred-qft-entire-v02
+Date: 2026-11-25, America/Toronto
+Lean: 4.23.0, no Mathlib, import Init only
+
+Files
+- ~/workspace/handover-qft-entire-2026-11-25/QFT_Toy.lean, 9520 bytes, 283 lines
+- ~/workspace/handover-qft-entire-2026-11-25/QFT_Toy_axiom_check.lean, 9698 bytes, 290 lines
+- Source copy: ~/workspace/qft-rigorous-construction-2026-11-25/QFT.lean, 7433 bytes
+- Copy check: cp gave 7433 bytes in both files before the toy section was added.
+
+Toy model in one line
+- R is Nat, P is Nat, Q is Nat, T is Unit, E is Unit, pair is x * y, OS is constant 1, quotient is identity, inner comes from osPreHilbert, vacuum cluster uses identity shift and omega 1.
+
+GPT-6.2 Astra call, 1 call only
+- Command: cat /tmp/astra_prompt_qft_toy.txt | python3 ~/workspace/custom-connectors/custom.openrouter-chat/bin/or_chat.py --model openai/gpt-6.2-astra --max-tokens 4000
+- Prompt came from stdin, never from argv.
+- Prompt file: /tmp/astra_prompt_qft_toy.txt, 2614 bytes.
+- Output file: /tmp/astra_qft_toy_out.txt, 1991 bytes, exit 0, about 46 seconds.
+- Cost estimate: the tool returned no price and no token counts, so no dollar figure is available. No dollar figure is guessed here.
+- Total Astra calls used: 1.
+
+Lean runs
+Run 1, QFT_Toy.lean, exit 1.
+- Error at nullRow: simp hit maximum recursion depth, with a warning about looping simp theorem Nat.add_succ.
+- Downstream errors followed: toyPres had metavariables, toyPair had a kernel type mismatch, toyVac cluster had an application type mismatch.
+- Full output kept at /tmp/lean_toy1.log, 3096 bytes.
+
+Fix attempt 1 of 3, after run 1
+- I replaced the nullRow simp proof with an explicit proof.
+- New proof: take hx as x * x = 0, use Nat.mul_eq_zero to get x = 0, substitute, then rfl.
+- I also fixed one transcription slip before run 1: my append typed Nat.mul_comm for addL, the Astra draft had Nat.add_mul, I corrected it to Nat.add_mul before the first lean run.
+- No other route changed. No Mathlib was added.
+
+Run 2, QFT_Toy.lean, exit 0.
+- Output was empty. No errors and no warnings.
+
+Run 3, QFT_Toy_axiom_check.lean, exit 0.
+- 'ToyQFT.toyPair' depends on axioms: [propext]
+- 'ToyQFT.toyInvariant' depends on axioms: [propext, Quot.sound]
+- 'ToyQFT.toyInner' depends on axioms: [propext]
+- 'ToyQFT.toyVac' depends on axioms: [propext]
+- 'ToyQFT.toyOS' depends on axioms: [propext]
+- 'ToyQFT.toyPres' depends on axioms: [propext]
+- No sorryAx appears anywhere. Quot.sound comes from the base file invariant theorem, not from the toy code.
+
+Final re-run, both files, exit 0 for each.
+- lean QFT_Toy.lean exit 0, no output.
+- lean QFT_Toy_axiom_check.lean exit 0, same six axiom lines as run 3.
+
+Sorry check
+- grep -n "sorry" on QFT_Toy.lean found no match.
+- grep -n "sorry" on QFT_Toy_axiom_check.lean found no match.
+- The word sorry appears nowhere in either file, not even in a comment.
+
+What is proved
+- toyOS is a concrete OS value for Nat scalars and Nat test vectors.
+- toyInner is osPreHilbert applied to toyOS and toyPres.
+- toyPair states toyInner.pair x y = x * y for all x and y.
+- toyInvariant states x = natVops.scale (toyInner.pair x 1) 1 for all x, proved through invariant_is_vacuum_multiple.
+
+Scope limit, stated plainly
+- This toy model is a finite one-site check of the reconstruction step only.
+- It does not prove a 4d theory.
+- It does not prove a mass gap.
+- No repo edits, no push, no deploy, no email, no post, no pay, no delete were made.
