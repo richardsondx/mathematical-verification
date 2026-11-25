@@ -1,0 +1,5 @@
+'EinsteinVlasov.Toy.totalZero' depends on axioms: [propext]
+'EinsteinVlasov.Toy.totalAdd' depends on axioms: [propext, Quot.sound]
+'EinsteinVlasov.Toy.totalDeposit' depends on axioms: [propext, Quot.sound]
+'EinsteinVlasov.Toy.totalScatter' depends on axioms: [propext, Quot.sound]
+'EinsteinVlasov.Toy.step_conserves' depends on axioms: [propext, Quot.sound]
