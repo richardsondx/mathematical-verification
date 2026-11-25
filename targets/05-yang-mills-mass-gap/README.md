@@ -29,6 +29,18 @@ Does quantum Yang-Mills theory in four dimensions exist, with a positive mass ga
 - No interacting 4d theory is built here.
 - No mass gap is proved. Vacuum uniqueness alone does not give a gap.
 
+## Update, Nov 25, 2026
+
+- Toy model added: `QFT_Toy.lean`, 283 lines, a Nat one-site check of the reconstruction step only.
+- Toy axiom check added: `QFT_Toy_axiom_check.lean`, with axiom prints for the six toy theorems.
+- Map added: `ENTIRE-MAP.md`, the full program map for the rigorous construction work.
+- Gap report added: `GAP-REPORT.md`, which names the open gaps in the program.
+- Toy check log added: `QFT_Toy_check.log`, the U2 run record for the toy model.
+- Checked Nov 25, 2026 in this folder: `lean QFT_Toy.lean` exit 0, no errors, no `sorry`.
+- Checked Nov 25, 2026 in this folder: `lean QFT_Toy_axiom_check.lean` exit 0, no `sorryAx`.
+- Toy axiom result: five theorems depend only on `propext`, one also depends on `Quot.sound`.
+- Status stays honest: axioms only, toy model added, no mass gap proved.
+
 ## Why this scope
 
 - Full construction needs distributions, renormalization, uniform estimates, and limits.
