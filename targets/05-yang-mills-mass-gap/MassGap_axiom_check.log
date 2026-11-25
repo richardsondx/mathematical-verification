@@ -1,5 +1,0 @@
-'MassGap.gapHolds' does not depend on any axioms
-'MassGap.toySatisfiesClayStatement' does not depend on any axioms
-'MassGap.uniqueVacuum' depends on axioms: [propext]
-'MassGap.noMiddle' does not depend on any axioms
-'MassGap.gapIsolatesVacuum' does not depend on any axioms
