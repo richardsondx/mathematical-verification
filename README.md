@@ -16,15 +16,15 @@ Each target lives in its own folder at the root of this repo, for example `01-ke
 
 ## What is proved, and what is not
 
-| Target | Proved in this repo | Not proved |
-| --- | --- | --- |
-| 01 Kerr stability | Elementary Delta algebra, 8 theorems | Full nonlinear stability |
-| 02 Einstein-Vlasov | Nothing yet | Whole question |
-| 03 Penrose inequality | Nothing yet | Whole question |
-| 04 Cosmic censorship | Nothing yet | Whole question |
-| 05 Yang-Mills mass gap | QFT axioms step, toy reconstruction, toy gap | 4d existence, real mass gap |
-| 06 Cosmological stability | Nothing yet | Whole question |
-| 07 Relativistic fluids | Nothing yet | Whole question |
+| Target | Proved in this repo | Date proved | Not proved |
+| --- | --- | --- | --- |
+| 01 Kerr stability | Elementary Delta algebra, 8 theorems | 25 Nov 2026 | Full nonlinear stability |
+| 02 Einstein-Vlasov | Nothing yet | - | Whole question |
+| 03 Penrose inequality | Nothing yet | - | Whole question |
+| 04 Cosmic censorship | Nothing yet | - | Whole question |
+| 05 Yang-Mills mass gap | QFT axioms step, toy reconstruction, toy gap | 25 Nov 2026 | 4d existence, real mass gap |
+| 06 Cosmological stability | Nothing yet | - | Whole question |
+| 07 Relativistic fluids | Nothing yet | - | Whole question |
 
 ## Proved answers
 
@@ -33,13 +33,13 @@ Each target lives in its own folder at the root of this repo, for example `01-ke
 - Answer: subextremality makes the discriminant positive, so Delta has two distinct real roots, $r_{\pm} = M \pm \sqrt{M^2-a^2}$, with $0 < r_+$, Sigma is positive at $r_+$, and Delta over Sigma is 0 at $r_+$.
 - Original source: Roy Kerr, Gravitational field of a spinning mass as an example of algebraically special metrics, Physical Review Letters 11, 1963, 237-238.
 - Stability source, not proved here: Klainerman, Szeftel, Giorgi, and Shen, slowly rotating Kerr, 2021 to 2022. Full range claims are preprints only, Hintz arXiv:2606.28253 and Szeftel arXiv:2609.40068, both 2026.
-- Proof: [01-kerr-stability/KerrStability.lean](01-kerr-stability/KerrStability.lean), 8 theorems, Lean 4.23.0, Mathlib v4.23.0, no `sorry`, axioms only `propext`, `Classical.choice`, `Quot.sound`. Run log: [01-kerr-stability/RUN-LOG.md](01-kerr-stability/RUN-LOG.md).
+- Proof: [01-kerr-stability/KerrStability.lean](01-kerr-stability/KerrStability.lean), 8 theorems, Lean 4.23.0, Mathlib v4.23.0, no `sorry`, axioms only `propext`, `Classical.choice`, `Quot.sound`. Proved 25 Nov 2026. Run log: [01-kerr-stability/RUN-LOG.md](01-kerr-stability/RUN-LOG.md).
 
 ### 05 Yang-Mills mass gap, axioms and toys only
 
 - Answer: reflection positivity gives a nonneg pairing, the reflected pairing descends to the quotient by its null space, that quotient carries a true inner product, and clustering plus invariance forces an invariant vector to be a multiple of the vacuum.
 - Original sources: Wightman axioms, early 1950s, first published 1964; Osterwalder and Schrader, axioms for Euclidean Green functions, 1973 and 1975.
-- Proof: [05-yang-mills-mass-gap/QFT.lean](05-yang-mills-mass-gap/QFT.lean), Lean 4.23.0, core only, no `sorry`.
+- Proof: [05-yang-mills-mass-gap/QFT.lean](05-yang-mills-mass-gap/QFT.lean), Lean 4.23.0, core only, no `sorry`. Proved 25 Nov 2026.
 - Toy answer: a one-site Nat model meets the OS axioms and checks the reconstruction step on that one example only.
 - Proof: [05-yang-mills-mass-gap/QFT_Toy.lean](05-yang-mills-mass-gap/QFT_Toy.lean), Lean 4.23.0, no `sorry`.
 - Toy gap answer: a two-state model with energies 0 and m has a gap of m, only the vacuum has energy zero, and no toy state sits between 0 and m.
