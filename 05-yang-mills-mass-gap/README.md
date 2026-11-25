@@ -66,6 +66,18 @@ Does quantum Yang-Mills theory in four dimensions exist, with a positive mass ga
 - Proof commit: https://github.com/richardsondx/mathematical-verification/commit/ae053e7b3d09e378031ccc237d3ee854c5c26662
 - Status stays honest: axioms only, toy model added, no mass gap proved.
 
+## P(phi)2 finite version, Nov 25, 2026
+
+- Map added: `PPHI2-MAP.md`, Nelson 1973 and 1966, Glimm and Jaffe 1968, OS 1973, Glimm Jaffe Spencer 1974.
+- Lean added: `PPhi2.lean`, Lean 4.23.0, core Lean only, no Mathlib.
+- Lean added: `PPhi2_axiom_check.lean`, the same file plus axiom prints, for verification only.
+- Checked Nov 25, 2026 in this folder: `lean PPhi2.lean` exit 0, no errors, no `sorry`.
+- Checked Nov 25, 2026 in this folder: `lean PPhi2_axiom_check.lean` exit 0, no `sorryAx`.
+- Finite result: two Bool sites, Int fields, P(x) = x^4 - x^2, action nonneg, vacuum unique, nonzero field has action at least m^2.
+- Axiom result: five theorems depend on propext and Quot.sound, one on propext only, two add Classical.choice.
+- Report added: `PPHI2-REPORT.md`, five open steps, hardest first, each with an unblock step.
+- Status stays honest: finite version proved, full construction stays open.
+
 ## Why this scope
 
 - Full construction needs distributions, renormalization, uniform estimates, and limits.
