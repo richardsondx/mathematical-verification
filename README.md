@@ -19,7 +19,7 @@ Each target lives in its own folder at the root of this repo, for example `01-ke
 | Target | Proved in this repo | Date proved | Not proved |
 | --- | --- | --- | --- |
 | 01 Kerr stability | Elementary Delta algebra, 8 theorems | 25 Nov 2026 | Full nonlinear stability |
-| 02 Einstein-Vlasov | Nothing yet | - | Whole question |
+| 02 Einstein-Vlasov | Finite particle toy, total count conserved | 25 Nov 2026 | Whole question |
 | 03 Penrose inequality | Nothing yet | - | Whole question |
 | 04 Cosmic censorship | Nothing yet | - | Whole question |
 | 05 Yang-Mills mass gap | QFT axioms step, toy reconstruction, toy gap | 25 Nov 2026 | 4d existence, real mass gap |
@@ -51,7 +51,7 @@ Each target lives in its own folder at the root of this repo, for example `01-ke
 ## Shortlist
 
 - 01 Kerr stability: elementary algebra proved, full stability in progress, see `01-kerr-stability`
-- 02 Einstein-Vlasov: not started, see `02-einstein-vlasov`
+- 02 Einstein-Vlasov: finite particle toy proved, full question open, see `02-einstein-vlasov`
 - 03 Penrose inequality: not started, see `03-penrose-inequality`
 - 04 Cosmic censorship: not started, see `04-cosmic-censorship`
 - 05 Yang-Mills mass gap: axioms and toys proved, real gap open, see `05-yang-mills-mass-gap`
