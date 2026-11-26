@@ -96,6 +96,16 @@ Full targets proved: 0 of 7.
 - [06 Cosmological stability](06-cosmological-stability/): not started.
 - [07 Relativistic fluid regularity](07-relativistic-fluid-regularity/): not started.
 
+## Small targets
+
+Small bounded cases, separate from the 7 full targets above. A win here is a bounded finite fact, not the open problem. The table says "bounded finite case" with the date, never the name of the open problem.
+
+Bounded finite cases proved: **1 of 10.**
+
+| Target | Status | What Lean has checked | What stays open | Independent check | Last update |
+|---|---|---|---|---|---|
+| [06 Distance graph, S = {1, 3, 8}](small-targets/06-distance-graph/) | bounded finite case | Lower bound 4/11 on the independence ratio, pattern {1, 3, 8, 10} in ZMod 11, period 11. Lean exits 0, no sorry, axioms propext, Classical.choice, Quot.sound only. | The exact independence ratio, the fractional chromatic number, Carraher conjecture 38. | Gemini hostile review, uncapped: confirms the 4/11 lower bound, rates it not a breakthrough, a routine formal verification of a small elementary periodic witness. | 26 Nov 2026 |
+
 ## How to check a target
 
 - Read its README first, it states the exact claim and the status
