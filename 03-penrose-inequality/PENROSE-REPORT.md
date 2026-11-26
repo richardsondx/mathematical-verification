@@ -1,9 +1,11 @@
-# Penrose inequality gap report
+# Penrose inequality gap report, v02
 
 Run: stage2-penrose-inequality-2026-11-25-01
 Date: Nov 25, 2026
 Status: map only, nothing proved in this run.
-Map: PENROSE-MAP.md
+Map: PENROSE-MAP-v02.md
+Version: v02, fix cycle 1.
+Version note: v01 Step 7 asked for the journal version of the charged proof outline. v02 closes it, the journal version exists.
 
 ## The bottleneck
 
@@ -36,8 +38,8 @@ Map: PENROSE-MAP.md
 - Step 6 next step: read de Lima and Girao, 2016, and check the source.
 - Step 6 owner: coordinator, next map update.
 - Step 7: confirm the publication status of the charged multiple-black-hole proof outline.
-- Step 7 next step: check whether arXiv:1308.3771 gained a journal version after 2013.
-- Step 7 owner: coordinator, next map update.
+- Step 7 result: closed, the journal version exists, J. Differential Geom. 106:451-498, 2017.
+- Step 7 owner: coordinator, fixed in this run.
 
 ## Falsification notes
 
