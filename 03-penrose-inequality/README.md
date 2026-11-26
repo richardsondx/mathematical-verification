@@ -20,6 +20,7 @@ Does the mass of an asymptotically flat spacetime bound the area of its horizons
 - Riemannian case, dimensions below 8: Bray and Lee, 2009.
 - Spherical symmetry: Malec and O Murchadha, 1994.
 - Charged case, connected horizon: Jang and Wald argument, weak flow 2001.
+- Charged case, multiple black holes: Khuri, Weinstein, and Yamada, 2017.
 
 ## What stays open
 
