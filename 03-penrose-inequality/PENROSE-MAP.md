@@ -1,9 +1,11 @@
-# Penrose inequality map
+# Penrose inequality map, v02
 
 Run: stage2-penrose-inequality-2026-11-25-01
 Date: Nov 25, 2026
 Status: map only, nothing proved in this run.
 Kit: Research brief kit, draft, reused.
+Version: v02, fix cycle 1.
+Version note: v01 Case 6 said proof outline, 2013. v02 corrects it to proved, 2017.
 
 ## The question
 
@@ -48,7 +50,7 @@ Kit: Research brief kit, draft, reused.
 
 - Take a complete asymptotically flat n-manifold with nonnegative scalar curvature.
 - Take A, the area of the outer-minimizing horizon.
-- The inequality states m >= (1/2)(A / w)^(n-2)/(n-1).
+- The inequality states m >= (1/2)(A / w)^((n-2)/(n-1)).
 - Here w is the area of the unit (n-1)-sphere.
 - Source: Bray and Lee, 2009, Duke Math. J. 148:81.
 
@@ -80,15 +82,16 @@ Kit: Research brief kit, draft, reused.
 - Case 4 status: proved.
 - Case 4 source: Phys. Rev. D 49:6931-6934, arXiv:gr-qc/9401014.
 - Case 5: charged Riemannian, connected horizon.
-- Case 5 author: Jang and Wald proposed the flow, Huisken and Ilmanen built the weak flow.
+- Case 5 author: Jang, charged change to the flow; Huisken and Ilmanen, weak flow.
 - Case 5 date: argument 1979, weak flow 2001.
 - Case 5 status: proved.
 - Case 5 source: Khuri, Weinstein, and Yamada, 2013, arXiv:1306.0206.
 - Case 6: charged Riemannian, multiple black holes, no charged matter outside the horizon.
 - Case 6 author: Khuri, Weinstein, and Yamada.
-- Case 6 date: 2013.
-- Case 6 status: proof outline, not a full published proof.
-- Case 6 source: arXiv:1308.3771.
+- Case 6 date: 2017.
+- Case 6 status: proved.
+- Case 6 source: J. Differential Geom. 106:451-498, arXiv:1409.3271.
+- Case 6 note: the outline first appeared in 2013, arXiv:1308.3771.
 - Case 7: charged Riemannian with charged matter, charge density of fixed sign.
 - Case 7 author: McCormick.
 - Case 7 date: 2019, revised 2021.
